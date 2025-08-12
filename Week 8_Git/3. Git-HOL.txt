@@ -1,0 +1,22 @@
+Task 3: Branching and Merging
+
+$ git branch GitNewBranch
+$ git checkout GitNewBranch
+
+$ echo "Branch File" > branch.txt
+$ git add branch.txt
+$ git commit -m "Added file to branch"
+
+$ git checkout master
+
+$ git diff GitNewBranch master
+# Shows CLI diff
+
+$ p4merge
+# Shows visual diff
+
+$ git merge GitNewBranch
+# Merged successfully
+
+$ git branch -d GitNewBranch
+Deleted branch GitNewBranch

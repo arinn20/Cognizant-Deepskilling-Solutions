@@ -1,0 +1,13 @@
+Task 2: Git Ignore
+
+$ touch debug.log
+$ mkdir log
+
+$ echo "*.log
+log/" > .gitignore
+
+$ git status
+Untracked files:
+  .gitignore
+
+# debug.log and log/ are ignored from being tracked.

@@ -1,0 +1,24 @@
+Task 4: Conflict Resolution
+
+$ git checkout -b GitWork
+$ echo "Hello from branch" > hello.xml
+$ git add hello.xml
+$ git commit -m "Added hello.xml in GitWork"
+
+$ git checkout master
+$ echo "Hello from master" > hello.xml
+$ git add hello.xml
+$ git commit -m "Added hello.xml in master"
+
+$ git merge GitWork
+Auto-merging hello.xml
+CONFLICT (content): Merge conflict in hello.xml
+
+# Resolve using merge tool or manually
+
+$ git add hello.xml
+$ git commit -m "Resolved conflict in hello.xml"
+
+$ echo "*~" >> .gitignore
+$ git add .gitignore
+$ git commit -m "Updated .gitignore to ignore backup files"

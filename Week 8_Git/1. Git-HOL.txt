@@ -1,0 +1,28 @@
+Task 1: Git Setup and Initial File Tracking
+
+$ git --version
+git version 2.40.1
+
+$ git config --global user.name "Your Name"
+$ git config --global user.email "your.email@example.com"
+
+$ notepad++
+# Notepad++ launches if configured correctly
+
+$ git init
+Initialized empty Git repository
+
+$ echo "Welcome to Git" > welcome.txt
+
+$ git status
+Untracked files:
+  welcome.txt
+
+$ git add welcome.txt
+
+$ git commit -m "Initial commit with welcome file"
+[master (root-commit) abc1234] Initial commit with welcome file
+
+$ git remote add origin <git-repo-url>
+$ git push origin master
+# Pushes code to remote repository
